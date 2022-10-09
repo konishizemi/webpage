@@ -172,6 +172,6 @@ header h1{
 }
 
 .sns {
-    visibility:hidden;
+    display: none;
 }
 }
