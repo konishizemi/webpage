@@ -39,9 +39,6 @@ header a{
     margin-right: 5px;
 }
 
-#last{
-}
-
 .menu li a{
     display:block;
     padding:10px 30px;
@@ -82,7 +79,7 @@ header a{
     display: flex;
 }
 
-#text {
+.text {
    /* position: relative;*/
     width:90%;
 }
@@ -126,10 +123,7 @@ header h1{
     border-radius: 30px;
     margin: 5px 0px 5px 0;
 }
-
-#last{
-}
-
+    
 .menu li a{
     display:block;
     padding:10px 30px;
