@@ -1,13 +1,24 @@
 *{
-margin: 0;
+margin: 0 auto;
 padding: 0:
 }
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
 body{
     background-color: #f8f8ff;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 header{
+    height: 140px;
     background-color: #b0c4de;
+    padding-bottom: 5px;
 }
 
 header h1{
@@ -23,13 +34,14 @@ header a{
     list-style:none;
     display: flex;
     justify-content: center;
-    margin:20px 0 30px 0;
-    padding-bottom: 30px;
+    margin:20px 0 0px 0;
+    padding-bottom: 0px;
+    height: 50px;
 }
 
 .menu li{
     width: 30%;
-    height: 20%;
+    height: 90%;
     text-align: center;
     display: inline-block;
     align-items: center;
@@ -72,7 +84,14 @@ header a{
 }
 
 .main {
-    margin: 0 10px 0 10px;
+    padding: 20px 10px 0 10px;
+}
+
+.out {
+    margin: 0;
+    position: relative;
+    height: calc(100% - 140px);
+    background-color: #f8f8ff;
 }
 
 .cont {
@@ -96,40 +115,50 @@ header a{
     width: 30%;*/
 }
 
+footer{
+    position: absolute;
+    bottom: 0;
+    height:20px;
+    width: 100%;
+    background-color:#b0c4de;
+}
+
 @media screen and (max-width: 500px){
+
+header{
+    height: 210px;
+}
 
 header h1{
     text-align: center;
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 .menu {
-    list-style:none;
+    height: 150px;
+    margin: 0;
+    padding:10px 0 10px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin:10px 0 30px 0;
-    padding: 10px 10px 30px 10px;
 }
 
 .menu li{
-    width: 100%;
-    height: 20%;
+    width: 70%;
+    margin-bottom: 5px;
     text-align: center;
     display: inline;
     align-items: center;
     background:rgba(255,249,213,0.7);
-    border-radius: 30px;
-    margin: 5px 0px 5px 0;
 }
-    
+
 .menu li a{
+    text-align: center;
     display:block;
-    padding:10px 30px;
     text-decoration: none;
     color: black;
-    font-size: 2rem;
+    font-size: 1rem;
     position: relative;
 }
 
@@ -164,11 +193,11 @@ header h1{
     margin-bottom: 10px;
     background:rgba(230,230,250,0.7);
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .main p{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .sns {
