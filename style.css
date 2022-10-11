@@ -16,13 +16,16 @@ body{
 }
 
 header{
-    height: 140px;
+    height: 50px;
     background-color: #b0c4de;
+    padding-top: 5px;
     padding-bottom: 5px;
+    position:relative;
 }
 
 header h1{
     margin-left: 10px;
+    width: calc(100% - 310px );
 }
 
 header a{
@@ -31,12 +34,16 @@ header a{
 }
 
 .menu {
+    position: absolute;
+    right:0;
+    top:5px;
     list-style:none;
     display: flex;
     justify-content: center;
-    margin:20px 0 0px 0;
-    padding-bottom: 0px;
+    margin:0;
+    padding: 0px;
     height: 50px;
+    width: 300px;
 }
 
 .menu li{
@@ -53,10 +60,9 @@ header a{
 
 .menu li a{
     display:block;
-    padding:10px 30px;
+    padding: 10px 0px;
     text-decoration: none;
     color: black;
-
     position: relative;
 }
 
@@ -69,8 +75,8 @@ header a{
     content: '';
     position: absolute;
     bottom: 5px;
-    left: 10%;
-    width: 80%;
+    left: 15%;
+    width: 70%;
     height: 1px;
     background: black;
     transition: all .3s;
@@ -90,7 +96,8 @@ header a{
 .out {
     margin: 0;
     position: relative;
-    height: calc(100% - 140px);
+    height: calc(100% - 60px);
+    min-height: 200px;
     background-color: #f8f8ff;
 }
 
@@ -99,97 +106,85 @@ header a{
 }
 
 .text {
-   /* position: relative;*/
+   padding-right: 20px;
     width:90%;
 }
 
-.main h2{
+.text h2{
     margin-bottom: 10px;
     background:rgba(230,230,250,0.7);
 }
 
 .sns {
-    /*position: absolute;
-    top: 0;
-    left: 100%;
-    width: 30%;*/
+    width:300px;
 }
 
 footer{
     position: absolute;
     bottom: 0;
-    height:20px;
+    height:30px;
     width: 100%;
     background-color:#b0c4de;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
 
 header{
-    height: 210px;
+    height: 100px;
 }
 
 header h1{
     text-align: center;
     font-size: 2rem;
+    width: 100%;
 }
 
 .menu {
-    height: 150px;
+    height: 100px;
+    width: 100%;
     margin: 0;
-    padding:10px 0 10px 0;
+    padding:5px 0 5px 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    position: static;
 }
 
 .menu li{
     width: 70%;
-    margin-bottom: 5px;
+    height: 40px;
+    margin-bottom: 0px;
     text-align: center;
     display: inline;
-    align-items: center;
     background:rgba(255,249,213,0.7);
 }
 
 .menu li a{
-    text-align: center;
     display:block;
     text-decoration: none;
     color: black;
     font-size: 1rem;
-    position: relative;
-}
-
-.menu li.current a,
-.menu li a::hover{
-    color: black;
+    padding: 10px 0;
 }
 
 .menu li a::after{
-    content: '';
-    position: absolute;
-    bottom: 5px;
-    left: 10%;
-    width: 80%;
+    bottom: 10px;
+    left: 15%;
+    width: 70%;
     height: 1px;
-    background: black;
-    transition: all .3s;
-    transform: scale(0.1);
-    transform-origin: center top;
 }
 
-.menu li.current a::after,
-.menu li a:hover::after{
-    transform: scale(1,1);
+.out {
+    height: calc(100% - 20px);
 }
+
 .main {
-    margin: 0 5% 0 5%;
-    padding-bottom: 60vh;;
+    padding: 10px 10px 0 10px;
 }
 
-.main h2{
+.text{
+    padding: 0;
+}
+
+.text h2{
     margin-bottom: 10px;
     background:rgba(230,230,250,0.7);
     text-align: center;
