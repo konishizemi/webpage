@@ -97,7 +97,7 @@ header a{
     margin: 0;
     position: relative;
     height: calc(100% - 60px);
-    min-height: 200px;
+    min-height:200px;
     background-color: #f8f8ff;
 }
 
@@ -106,7 +106,10 @@ header a{
 }
 
 .text {
-   padding-right: 20px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
     width:90%;
 }
 
@@ -117,6 +120,7 @@ header a{
 
 .sns {
     width:300px;
+    background-color: white;
 }
 
 footer{
@@ -182,6 +186,7 @@ header h1{
 
 .text{
     padding: 0;
+    width:100%;
 }
 
 .text h2{
